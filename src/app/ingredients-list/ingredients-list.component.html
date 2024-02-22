@@ -1,0 +1,5 @@
+<ol class="list">
+    <li *ngFor="let ing of ingredients$ | async">
+        {{ing}} - <a [routerLink]="['/ingredient-details', ing]">Details </a>
+    </li>
+</ol>
